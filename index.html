@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+</head>
+
+<style>
+    html,
+    body {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        max-width: 1390px;
+        background: #c6bfd4;
+        padding: 80px;
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <form>
+            <h1>Simple Calculator</h1>
+
+            Input 1:<input type="number" id="value1"><br><br>
+            Input 2:<input type="number" id="value2"><br><br>
+
+            <select id="select">
+                <option value="select">Select Below</option>
+                <option value="add">Addition</option>
+                <option value="minus">Substract</option>
+                <option value="divide">Division</option>
+                <option value="multiply">Multiplication</option>
+            </select>
+
+            <button type="button" onclick="calc()">Calculate</button>
+        </form>
+
+        <div id="answer" style="font-size: xx-large;"></div>
+
+</body>
+<script src="calc.js"></script>
+</div>
+
+</html>
